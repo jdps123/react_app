@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+.Navbar{
+    background-color: #636162;
+    color: white;
+    border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#contact-bg{
+    background-image: url(/public/images/contact-us-bg-1.jpg);
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#home-bg{
+    background-image: url(/public/images/Machining-at-Essner-scaled.jpg);
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .text-lead{
+        font-weight: 700;
+        font-size: 4.5rem;
+        color: aliceblue;
+    }
+
+    .styled li {
+        font-size: 1.0rem;
+        font-weight: 600;
+        color: aliceblue;
+        line-height: 30px;
+    }
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header{
+    background-image: linear-gradient(to right, #636162, #7a7878, #928f8e, #a9a8a6, #c1c1bf, #cacbc8, #d3d5d2, #dbe0dc, #d5ded9, #cedbd6, #c6d9d5, #bfd6d4);
 }
 
-.App-link {
-  color: #61dafb;
-}
+#services {
+    position: relative;
+    
+    .services-box {
+        background-color: #cae0ff;
+        border-radius: 50px;
+        padding: 15px 20px 15px 50px;
+        display: block;
+        background-image: url(/public/images/cnc-1.jpg);
+        background-repeat: no-repeat;
+    background-size: cover;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+        @media (max-width: 1024px) {
+            padding: 15px 20px 30px 30px;
+        }
+    }
+    .circ-1 {
+        position: absolute;
+        background-color: #7afcb1;
+        border-radius: 50%;
+        display: block;
+        width: 55px;
+        height: 55px;
+        top: 0%;
+        right: 5%;
+    }
+    .lines3 {
+        position: absolute;
+        right: 0;
+        top: 30%;
+    }
 }
