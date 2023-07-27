@@ -5,7 +5,7 @@
 }
 
 #contact-bg{
-    background-image: url(/public/images/contact-us-bg-1.jpg);
+    /* background-image: url(/public/images/contact-us-bg-1.jpg); */
     margin: 0px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,7 +39,7 @@
 
 #services {
     position: relative;
-    
+
     .services-box {
         background-color: #cae0ff;
         border-radius: 50px;
@@ -53,5 +53,5 @@
             padding: 15px 20px 30px 30px;
         }
     }
-   
+
 }
