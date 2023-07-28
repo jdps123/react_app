@@ -10,7 +10,7 @@ function OffcanvasExample() {
         <Navbar key={expand} expand={expand} className="bg-body-tertiary header fs-5">
           <Container>
             <Navbar.Brand href="#">
-            <img alt="" src="/images/logo.png" width="255" height="66" className="d-inline-block align-top" />
+            <img alt="" src="/images/logo.png" width="255" height="60" className="d-inline-block align-top" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
