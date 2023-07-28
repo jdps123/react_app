@@ -1,10 +1,10 @@
-.Navbar{
+.Navbar {
     background-color: #636162;
     color: white;
     border-radius: 5px;
 }
 
-#contact-bg{
+#contact-bg {
     /* background-image: url(/public/images/contact-us-bg-1.jpg); */
     margin: 0px;
     background-repeat: no-repeat;
@@ -12,13 +12,22 @@
     color: black;
 }
 
-#home-bg{
-    background-image: url(/public/images/Machining-at-Essner-scaled.jpg);
-    margin: 0px;
+#home-bg {
+    /* background-image: url(/public/images/Machining-at-Essner-scaled.jpg);
+   margin: 0px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 
-    .text-lead{
+    .bgvid {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .text-lead {
         font-weight: 700;
         font-size: 4.5rem;
         color: aliceblue;
@@ -33,7 +42,7 @@
 
 }
 
-.header{
+.header {
     background-image: linear-gradient(to right, #636162, #7a7878, #928f8e, #a9a8a6, #c1c1bf, #cacbc8, #d3d5d2, #dbe0dc, #d5ded9, #cedbd6, #c6d9d5, #bfd6d4);
 }
 
@@ -47,7 +56,7 @@
         display: block;
         background-image: url(/public/images/cnc-1.jpg);
         background-repeat: no-repeat;
-    background-size: cover;
+        background-size: cover;
 
         @media (max-width: 1024px) {
             padding: 15px 20px 30px 30px;
