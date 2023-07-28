@@ -7,11 +7,11 @@ function OffcanvasExample() {
   return (
     <>
       {["xl"].map((expand) => (
-        <Navbar key={expand} expand={expand} className="header fs-4 fixed-top">
+        <Navbar key={expand} expand={expand} className="header fs-4 fixed-top bg-dark">
           <Container>
             <Navbar.Brand href="#">
               <img
-                alt=""
+                alt="logo image"
                 src="/images/logo.png"
                 width="255"
                 height="66"

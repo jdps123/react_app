@@ -8,7 +8,7 @@
 
 /* home page css*/
 .bg-dark {
-    --bs-bg-opacity: 0.7;
+    --bs-bg-opacity: 0.6;
 }
 
 #home-bg {
@@ -46,6 +46,8 @@
 .header {
     display: block;
     box-sizing: border-box;
+    --bs-bg-opacity: 0.6;
+
 }
 
 .nav-link:hover {
