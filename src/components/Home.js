@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <section>
       <Container fluid id="home-bg">
-        <video src="videos\cnc-flattering-machine-videos.mp4" autoPlay playsinline muted loop preload="yes" className="video-bg"/>
+        <video src="videos\cnc-flattering-machine-videos.mp4" autoPlay playsinline muted loop preload="yes" className="video-bg"/ >
         <Container>
           <Row>
             <Col className="col-lg-6 col-md-6 col-sm-12 mt-5">
