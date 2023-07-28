@@ -7,10 +7,10 @@ function OffcanvasExample() {
   return (
     <>
       {['xl'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-body-tertiary header fs-5">
+        <Navbar key={expand} expand={expand} className="header fs-4 fixed-top">
           <Container>
             <Navbar.Brand href="#">
-            <img alt="" src="/images/logo.png" width="255" height="66" className="d-inline-block align-top" />
+            <img alt="" src="/images/logo.png" width="255" height="66" className="d-inline-block align-top logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -25,12 +25,12 @@ function OffcanvasExample() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="/">Home</Nav.Link>
-                  <Nav.Link href="/pages/portfolio">Portfolio</Nav.Link>
-                  <Nav.Link href="/pages/testimonial">Testimonals</Nav.Link>
-                  <Nav.Link href="/pages/projects">Projects</Nav.Link>
-                  <Nav.Link href="/pages/about">About</Nav.Link>
-                  <Nav.Link href="/pages/contact">Contact</Nav.Link>
+                  <Nav.Link href="/" className='text-white fs-4 px-3 nav-link' >Home</Nav.Link>
+                  <Nav.Link href="/pages/portfolio" className='text-white white fs-4 px-3 nav-link'>Portfolio</Nav.Link>
+                  <Nav.Link href="/pages/testimonial" className='text-white white fs-4 px-3 nav-link'>Testimonals</Nav.Link>
+                  <Nav.Link href="/pages/projects" className='text-white white fs-4 px-3 nav-link'>Projects</Nav.Link>
+                  <Nav.Link href="/pages/about" className='text-white white fs-4 px-3 nav-link'>About</Nav.Link>
+                  <Nav.Link href="/pages/contact" className='text-white white fs-4 px-3 nav-link'>Contact</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
