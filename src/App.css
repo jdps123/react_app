@@ -13,19 +13,11 @@
 }
 
 #home-bg {
-    /* background-image: url(/public/images/Machining-at-Essner-scaled.jpg);
-   margin: 0px;
-    background-repeat: no-repeat;
-    background-size: cover; */
+ .video-bg{
+    position: absolute;
+    margin: auto;
+ }
 
-    .bgvid {
-        object-fit: cover;
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
 
     .text-lead {
         font-weight: 700;

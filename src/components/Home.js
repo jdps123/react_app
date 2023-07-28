@@ -2,14 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ReactPlayer from "react-player";
 import { FaAngleRight } from "react-icons/fa";
-import VideoPlayer from "react-video";
+// import BgVideo from 'react_app\public\videos\cnc-flattering-machine-videos.mp4'
 
 const Home = () => {
   return (
     <section>
       <Container fluid id="home-bg">
-{/* adding video to the background of container */}
-
+        <video src="videos\cnc-flattering-machine-videos.mp4" autoPlay playsinline muted loop preload="yes" className="video-bg"/>
         <Container>
           <Row>
             <Col className="col-lg-6 col-md-6 col-sm-12 mt-5">
