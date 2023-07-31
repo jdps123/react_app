@@ -8,7 +8,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 export default function Footer() {
   const currDate = new Date();
   const currYear = currDate.getFullYear();
-  
+
  // function MyFunction(num1){
  //  console.log(num1*num1)
  // }
@@ -19,9 +19,9 @@ export default function Footer() {
  }
  Heading()*/
 
- 
+
   return (
-    <footer>
+    <footer className="#">
         <Container fluid className="bg-secondary">
       <Container data-bs-theme="dark">
         <Row className="py-5">
@@ -30,7 +30,7 @@ export default function Footer() {
           </Col>
           <Col lg={4} sm={6} xs={12}>
             <h6 className="text-center text-md-start mt-4 mt-lg-0">Services</h6>
-    
+
           </Col>
         </Row>
       </Container>

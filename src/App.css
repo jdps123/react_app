@@ -1,31 +1,26 @@
-#contact-bg {
-    /* background-image: url(/public/images/contact-us-bg-1.jpg); */
-    margin: 0px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: black;
+.bg-dark {
+    --bs-bg-opacity: 0.6;
+    color: white;
+}
+
+
+#contact-bg,
+#card {
+    padding-top: 100px;
+
 }
 
 /* home page css*/
-.bg-dark {
-    --bs-bg-opacity: 0.6;
-}
+
 
 #home-bg {
     .video-bg {
-        position: absolute;
+        /* position: absolute; */
         z-index: -1;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
+        /* right: 0; */
     }
 
-    #card {
-        position: relative;
-        top: 100px;
-        border-radius: 20px;
-    }
+
 
     .text-lead {
         font-weight: 700;
@@ -38,6 +33,19 @@
         font-weight: 600;
         color: aliceblue;
         line-height: 30px;
+    }
+
+    @media (max-width: 768px) {
+
+
+        #card {
+            /* width: 100%; */
+            margin: 0;
+        }
+
+        .text-lead {
+            font-size: 2.5rem;
+        }
     }
 }
 

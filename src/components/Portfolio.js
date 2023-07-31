@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Portfolio = () => {
-  return (
-    <div>Portfolio</div>
-  )
-}
+  return <section className="bg-dark"></section>;
+};
 
-export default Portfolio
+export default Portfolio;

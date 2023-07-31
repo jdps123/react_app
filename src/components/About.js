@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const About = () => {
-  return (
-    <div>About fgjhfgjhjhjj</div>
-  )
-}
+  return <section className="bg-dark"></section>;
+};
 
-export default About
+export default About;
