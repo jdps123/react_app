@@ -46,17 +46,30 @@
 .header {
     display: block;
     box-sizing: border-box;
-    --bs-bg-opacity: 0.6;
+    --bs-bg-opacity: 0.4;
 
+}
+
+.nav-link {
+    color: white;
 }
 
 .nav-link:hover {
     box-sizing: border-box;
     box-shadow: 5px 5px 10px white;
     background-color: black;
+    color: white;
     border-radius: 10px;
 }
 
+@media (max-width: 768px) {
+    .nav-link {
+        color: black;
+    }
+
+}
+
+/* services */
 #services {
     position: relative;
 

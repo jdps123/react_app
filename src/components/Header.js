@@ -9,13 +9,13 @@ function OffcanvasExample() {
       {["xl"].map((expand) => (
         <Navbar key={expand} expand={expand} className="header fs-4 fixed-top bg-dark">
           <Container>
-            <Navbar.Brand href="#">
+            <Navbar.Brand href="#" className="bg-dark rounded p-0">
               <img
                 alt="logo image"
                 src="/images/logo.png"
                 width="255"
                 height="66"
-                className="d-inline-block align-top"
+                className="d-inline-block align-top p-2"
               />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -31,36 +31,36 @@ function OffcanvasExample() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="/" className="text-white fs-4 px-3 nav-link">
+                  <Nav.Link href="/" className="fs-4 px-3 nav-link">
                     Home
                   </Nav.Link>
                   <Nav.Link
                     href="/pages/portfolio"
-                    className="text-white white fs-4 px-3 nav-link"
+                    className="fs-4 px-3 nav-link"
                   >
                     Portfolio
                   </Nav.Link>
                   <Nav.Link
                     href="/pages/testimonial"
-                    className="text-white white fs-4 px-3 nav-link"
+                    className="fs-4 px-3 nav-link"
                   >
                     Testimonals
                   </Nav.Link>
                   <Nav.Link
                     href="/pages/projects"
-                    className="text-white white fs-4 px-3 nav-link"
+                    className="fs-4 px-3 nav-link"
                   >
                     Projects
                   </Nav.Link>
                   <Nav.Link
                     href="/pages/about"
-                    className="text-white white fs-4 px-3 nav-link"
+                    className="fs-4 px-3 nav-link"
                   >
                     About
                   </Nav.Link>
                   <Nav.Link
                     href="/pages/contact"
-                    className="text-white white fs-4 px-3 nav-link"
+                    className="white fs-4 px-3 nav-link"
                   >
                     Contact
                   </Nav.Link>
