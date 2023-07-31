@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ReactPlayer from "react-player";
-import { FaAngleRight } from "react-icons/fa";
 // import BgVideo from 'react_app\public\videos\cnc-flattering-machine-videos.mp4'
 
 const Home = () => {
