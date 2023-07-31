@@ -7,7 +7,11 @@ function OffcanvasExample() {
   return (
     <>
       {["xl"].map((expand) => (
-        <Navbar key={expand} expand={expand} className="header fs-4 fixed-top bg-dark">
+        <Navbar
+          key={expand}
+          expand={expand}
+          className="header fs-4 fixed-top bg-dark"
+        >
           <Container>
             <Navbar.Brand href="#" className="bg-dark rounded p-0">
               <img
@@ -18,7 +22,10 @@ function OffcanvasExample() {
                 className="d-inline-block align-top p-2"
               />
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Toggle
+              className="bg-white"
+              aria-controls={`offcanvasNavbar-expand-${expand}`}
+            />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
@@ -52,10 +59,7 @@ function OffcanvasExample() {
                   >
                     Projects
                   </Nav.Link>
-                  <Nav.Link
-                    href="/pages/about"
-                    className="fs-4 px-3 nav-link"
-                  >
+                  <Nav.Link href="/pages/about" className="fs-4 px-3 nav-link">
                     About
                   </Nav.Link>
                   <Nav.Link
