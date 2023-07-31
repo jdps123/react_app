@@ -4,7 +4,9 @@
 import { Col, Row, Container, Button } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 
+
 export default function ContactUs() {
+
   return (
     <>
       <section id="contact-bg" className="bg-dark">
@@ -40,6 +42,9 @@ export default function ContactUs() {
                     type="text"
                     placeholder="Enter Name"
                     name="username"
+                    
+                  
+                    
                     required
                     autoComplete="off"
                   />
@@ -50,7 +55,7 @@ export default function ContactUs() {
                   <Form.Label>Email</Form.Label>
                   <Form.Control
                     type="email"
-                    placeholder="Enter email"
+                    placeholder="Enter email" onChange={(e) => setEmail(e.target.value)}
                     name="useremail"
                     required
                     autoComplete="off"
@@ -70,8 +75,8 @@ export default function ContactUs() {
                 >
                   <Form.Label>Phone:</Form.Label>
                   <Form.Control
-                    type="text"
-                    placeholder="Phone"
+                    type="phone"
+                    placeholder="Phone" onChange={(e) => setPhone(e.target.value)}
                     name="phone"
                     autoComplete="off"
                   />
@@ -88,7 +93,7 @@ export default function ContactUs() {
                   <Form.Label>Subject:</Form.Label>
                   <Form.Control
                     type="text"
-                    placeholder="Subject"
+                    placeholder="Subject" onChange={(e) => setSubject(e.target.value)}
                     name="subject"
                     required
                     autoComplete="off"
@@ -104,9 +109,9 @@ export default function ContactUs() {
                 >
                   <Form.Label>Message:</Form.Label>
                   <Form.Control
-                    as="textarea"
+                    as="textarea" type="text"
                     rows={5}
-                    placeholder="Message"
+                    placeholder="Message" onChange={(e) => setMessage(e.target.value)}
                     name="message"
                     required
                     autoComplete="off"
@@ -126,10 +131,7 @@ export default function ContactUs() {
                   </small>
                 </p>
               </Row>
-              <Button
-                type="submit"
-                className="btn btn-primary btn-lg d-block mx-auto px-5"
-              >
+              <Button type="submit" className="btn btn-primary btn-lg d-block mx-auto px-5">
                 Submit
               </Button>
             </Form>
