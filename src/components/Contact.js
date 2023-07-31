@@ -4,10 +4,41 @@
 
 import { Col, Row, Container, Button } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
-
+import { useState } from "react";
 
 export default function ContactUs() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
 
+  const baseUrl = "http://localhost:8000";
+
+  const sendEmail = async () => {
+    let dataSend = {
+      name: name,
+      phone: phone,
+      email: email,
+      subject: subject,
+      message: message,
+    };
+    const res = await fetch(`${baseUrl}/email/sendEmail`, {
+      method: "POST",
+      body: JSON.stringify(dataSend),
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    })
+      // HANDLING ERRORS
+      .then((res) => {
+        console.log(res);
+        if (res.status > 199 && res.status < 300) {
+          alert("Send Successfully !");
+        }
+      });
+  };
   return (
     <>
       <section id='contact-bg'>
@@ -28,9 +59,9 @@ export default function ContactUs() {
                 <Form.Group as={Col} sm={6} xs={12} className="mb-3" controlId="formGroupName">
                   <Form.Label>Name:</Form.Label>
                   <Form.Control
-                    type="text"
-                    placeholder="Enter Name"
-                    name="username"
+                    type="name"
+                    placeholder="Enter Name" onChange={(e) => setName(e.target.value)}
+                    name="name"
                     
                   
                     
@@ -44,7 +75,7 @@ export default function ContactUs() {
                   <Form.Label>Email</Form.Label>
                   <Form.Control
                     type="email"
-                    placeholder="Enter email"
+                    placeholder="Enter email" onChange={(e) => setEmail(e.target.value)}
                     name="useremail"
               
                    
@@ -58,8 +89,8 @@ export default function ContactUs() {
                 <Form.Group as={Col} sm={6} xs={12} className="mb-3" controlId="formGroupPhone">
                   <Form.Label>Phone:</Form.Label>
                   <Form.Control
-                    type="text"
-                    placeholder="Phone"
+                    type="phone"
+                    placeholder="Phone" onChange={(e) => setPhone(e.target.value)}
                     name="phone"
                     
                     autoComplete="off"
@@ -71,7 +102,7 @@ export default function ContactUs() {
                   <Form.Label>Subject:</Form.Label>
                   <Form.Control
                     type="text"
-                    placeholder="Subject"
+                    placeholder="Subject" onChange={(e) => setSubject(e.target.value)}
                     name="subject"
                 
                     required
@@ -84,9 +115,9 @@ export default function ContactUs() {
                 <Form.Group as={Col} className="mb-3" controlId="exampleForm.ControlTextarea1">
                   <Form.Label>Message:</Form.Label>
                   <Form.Control
-                    as="textarea"
+                    as="textarea" type="text"
                     rows={5}
-                    placeholder="Message"
+                    placeholder="Message" onChange={(e) => setMessage(e.target.value)}
                     name="message"
                     
                     required
@@ -104,7 +135,7 @@ export default function ContactUs() {
                   </small>
                 </p>
               </Row>
-              <Button type="submit" className="btn btn-primary btn-lg d-block mx-auto px-5">
+              <Button type="submit" className="btn btn-primary btn-lg d-block mx-auto px-5" onClick={() => sendEmail()}>
                 Submit
               </Button>
             </Form>
