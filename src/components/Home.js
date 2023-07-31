@@ -7,20 +7,21 @@ import { FaAngleRight } from "react-icons/fa";
 const Home = () => {
   return (
     <section className="bg-dark">
-      <Container fluid id="home-bg">
+      <Container fluid id="home-bg" className="p-0">
         <video
           src="videos\cnc-flattering-machine-videos.mp4"
+          typeof="video/mp4"
           autoPlay
           playsinline
           muted
           loop
           preload="yes"
-          className="video-bg"
+          className="video-bg position-absolute w-100 m-0"
         />
-        <Container id="card">
-          <Row className="p-4">
+        <Container id="card" className="pt-5 m-auto">
+          <Row className="p-4 w-100 ">
             <Col className="col-lg-6 col-md-6 col-sm-12 mt-5">
-              <h1 className="text-lead">Modern CNC Solutions</h1>
+              <h1 className="text-lead ">Modern CNC Solutions</h1>
               <ul className="styled fs-5">
                 <li>New contemporary high-tech CNC tool machines</li>
                 <li>Globally advanced CAD/CAM software</li>
@@ -37,8 +38,7 @@ const Home = () => {
               <img
                 alt=""
                 src="/images/CNC.jpg"
-                height="100"
-                className="img-fluid rounded-5"
+                className="img-fluid rounded-4"
               />
             </Col>
           </Row>
