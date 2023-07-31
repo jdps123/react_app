@@ -73,7 +73,7 @@ export default function ContactUs() {
                   <Form.Control
                     type="text"
                     placeholder="Enter Name"
-                    name="username"
+                    name="name"
                     
                   
                     
@@ -88,7 +88,7 @@ export default function ContactUs() {
                   <Form.Control
                     type="email"
                     placeholder="Enter email" onChange={(e) => setEmail(e.target.value)}
-                    name="useremail"
+                    name="email"
                     required
                     autoComplete="off"
                   />
