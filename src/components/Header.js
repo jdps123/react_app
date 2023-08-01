@@ -13,7 +13,7 @@ function OffcanvasExample() {
           className="header fs-4 fixed-top bg-dark"
         >
           <Container>
-            <Navbar.Brand href="#" className="bg-dark rounded p-0">
+            <Navbar.Brand href="/" className="bg-dark rounded p-0">
               <img
                 alt="logo image"
                 src="/images/logo.png"
