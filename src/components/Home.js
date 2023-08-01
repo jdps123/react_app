@@ -32,12 +32,15 @@ const Home = () => {
                   Creation of a fully equipped production control department
                 </li>
               </ul>
+              <br></br>
               {/* button add */}
-              <div class="d-grid gap-2">
-                <button type="button" name="" id="" class="btn btn-primary">
-                  Button
-                </button>
-              </div>
+              <a
+                type="button"
+                className="btn btn-primary "
+                href="/pages/portfolio text-decoration-none"
+              >
+                See project list &nbsp; &gt;
+              </a>
             </Col>
             <Col className="col-lg-6 col-md-6 col-sm-12 mt-5 mb-5 d-none d-sm-block">
               <img
@@ -45,6 +48,7 @@ const Home = () => {
                 src="/images/CNC.jpg"
                 className="img-fluid rounded-4"
               />
+              {/*end of button tag */}
             </Col>
           </Row>
         </Container>
