@@ -32,6 +32,12 @@ const Home = () => {
                   Creation of a fully equipped production control department
                 </li>
               </ul>
+              {/* button add */}
+              <div class="d-grid gap-2">
+                <button type="button" name="" id="" class="btn btn-primary">
+                  Button
+                </button>
+              </div>
             </Col>
             <Col className="col-lg-6 col-md-6 col-sm-12 mt-5 mb-5 d-none d-sm-block">
               <img
@@ -62,11 +68,6 @@ const Home = () => {
               dimensions entered into the computer.
             </p>
           </Col>
-        </Row>
-      </Container>
-      <Container>
-        <Row>
-          <Col className="work"></Col>
         </Row>
       </Container>
     </section>

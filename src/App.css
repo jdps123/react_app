@@ -11,16 +11,10 @@
 }
 
 /* home page css*/
-
-
 #home-bg {
     .video-bg {
-        /* position: absolute; */
         z-index: -1;
-        /* right: 0; */
     }
-
-
 
     .text-lead {
         font-weight: 700;
