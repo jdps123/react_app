@@ -32,6 +32,21 @@ const Home = () => {
                   Creation of a fully equipped production control department
                 </li>
               </ul>
+              <br></br>
+
+              <Row>
+                {/* button see more projects  */}
+                <Col className="col-6">
+                  <a
+                    id="projectlist"
+                    class="btn btn-primary fs-5"
+                    href="/pages/portfolio"
+                    role="button"
+                  >
+                    See our projects &nbsp; &gt;
+                  </a>
+                </Col>
+              </Row>
             </Col>
             <Col className="col-lg-6 col-md-6 col-sm-12 mt-5 mb-5 d-none d-sm-block">
               <img
@@ -69,10 +84,7 @@ const Home = () => {
           <Col className="work"></Col>
         </Row>
       </Container>
-
-    
     </section>
-
   );
 };
 
