@@ -6,7 +6,7 @@ import ReactPlayer from "react-player";
 const Home = () => {
   return (
     <section className="bg-dark">
-      <Container fluid id="home-bg" className="p-0">
+      <Container fluid id="home-bg" className="p-0 m-0">
         <video
           src="videos\cnc-flattering-machine-videos.mp4"
           typeof="video/mp4"
@@ -15,9 +15,9 @@ const Home = () => {
           muted
           loop
           preload="yes"
-          className="video-bg position-absolute w-100 m-0"
+          className="video-bg position-absolute w-100 "
         />
-        <Container id="card" className="pt-5 m-auto">
+        <Container fluid id="card" className="pt-5 m-auto">
           <Row className="p-4 w-100 ">
             <Col className="col-lg-6 col-md-6 col-sm-12 mt-5">
               <h1 className="text-lead ">Modern CNC Solutions</h1>
